@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "death": "^1.1.0",
+    "doasync": "^2.0.1",
+    "express": "^4.17.1",
+    "i2c-bus": "^5.2.2",
+    "node-dht-sensor": "^0.4.3",
+    "onoff": "^6.0.3",
+    "request-promise": "^4.2.6",
+    "statman-stopwatch": "^2.13.0",
+    "vl53l0x": "^2.0.0"
+  },
+  "name": "testing",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
