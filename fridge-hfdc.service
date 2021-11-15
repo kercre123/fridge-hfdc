@@ -1,0 +1,9 @@
+[Unit]
+Description=Fridge tracker
+
+[Service]
+WorkingDirectory=/home/pi/fridge-hfdc
+ExecStart=/usr/bin/node index.js
+
+[Install]
+WantedBy=multi-user.target

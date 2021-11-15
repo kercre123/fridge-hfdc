@@ -1,0 +1,8 @@
+[Unit]
+Description=Fridge tracker uploader
+
+[Service]
+ExecStart=/home/pi/fridge-hfdc/fridgeUpload.sh
+
+[Install]
+WantedBy=multi-user.target
