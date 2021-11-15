@@ -70,9 +70,10 @@ VL53L0X(...args).then(async (vl53l0x) => {
  }
  fullDate = year + "-" + month + "-" + date + " " + rightHours + ":" + rightMinutes
  distance = await vl53l0x.measure()
- humiditySensor.read(11, 4, function(err, temperature, humidity) {
-   tempF = temperature * 9 / 5 + 32;
-   humidityG = humidity
+ humiditySensor.read(22, 4, function(err, temperature, humidity) {
+   tempFbR = temperature * 9 / 5 + 32;
+   tempF = tempFbR.toFixed(1)
+   humidityG = humidity.toFixed(1)
 });
  if (`${distance}` > 100) {
      beenOpen = "true"
