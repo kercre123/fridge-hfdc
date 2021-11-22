@@ -2,11 +2,11 @@
 
 set -e
 
-if [ ! -f ./fridgeName ]; then
+if [ ! -f /home/pi/fridge-hfdc/fridgeName ]; then
    echo "fridgeName file does not exist"
    exit 0
 fi
-gridderName=$(cat fridgeName)
+gridderName=$(cat /home/pi/fridge-hfdc/fridgeName)
 
 while true
 do
