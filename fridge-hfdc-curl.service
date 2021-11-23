@@ -1,7 +1,11 @@
 [Unit]
 Description=Fridge tracker uploader
+StartLimitIntervalSec=500
+StartLimitBurst=5
 
 [Service]
+Restart=on-failure
+RestartSec=5s
 ExecStart=/home/pi/fridge-hfdc/fridgeUpload.sh
 
 [Install]

@@ -1,7 +1,11 @@
 [Unit]
 Description=Fridge tracker
+StartLimitIntervalSec=500
+StartLimitBurst=5
 
 [Service]
+Restart=on-failure
+RestartSec=5s
 WorkingDirectory=/home/pi/fridge-hfdc
 ExecStart=/usr/bin/node index.js
 
