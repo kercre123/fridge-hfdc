@@ -1,0 +1,12 @@
+[Unit]
+Description=Fridge tracker software updater
+StartLimitIntervalSec=500
+StartLimitBurst=5
+
+[Service]
+Restart=on-failure
+RestartSec=5s
+ExecStart=/home/pi/fridge-hfdc/fridgeUpdate.sh
+
+[Install]
+WantedBy=multi-user.target
